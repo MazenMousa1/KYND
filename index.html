@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kynd Café — Aesthetic matcha & emotionally supportive sips. Premium matcha, pink drinks & mindful moments." />
+  <title>Kynd Café — Chosen by those who choose kyndness</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">Kynd</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="menu.html" class="nav-link">Menu</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#location" class="nav-link">Visit Us</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose">✕</button>
+    <ul>
+      <li><a href="menu.html" class="mobile-link">Menu</a></li>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#location" class="mobile-link">Visit Us</a></li>
+    </ul>
+  </div>
+  <div class="menu-overlay" id="menuOverlay"></div>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-blobs">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <div class="hero-content">
+   
+      <h1 class="hero-title reveal">
+        Chosen by those<br/><em>who choose kyndness</em>
+      </h1>
+      <p class="hero-sub reveal">Aesthetic matcha & emotionally supportive sips.<br/>Every cup is a little love note to yourself.</p>
+      <div class="hero-btns reveal-up" style="animation-delay: 0.4s;">
+        <a href="menu.html" class="btn-primary">View Menu</a>
+        <a href="#about" class="btn-ghost">Our Story</a>
+      </div>
+
+    </div>
+    <div class="hero-visual reveal">
+      <div class="hero-card glass-card">
+        <div class="hero-img-wrap">
+          <img src="assets/matcha-hero.png" alt="Kynd matcha latte" class="hero-drink-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <div class="hero-img-fallback">🍵</div>
+        </div>
+        <div class="hero-card-label">
+          <span class="label-tag">★ Bestseller</span>
+          <p class="label-name">Signature Matcha Latte</p>
+          <p class="label-price">180 $</p>
+        </div>
+      </div>
+      <div class="floating-pill pill-1">🌸 Vegan friendly</div>
+      <div class="floating-pill pill-2">✦ No rush. Just sip.</div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section id="categories" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">✦ Sip & Savour</span>
+        <h2>Browse by <em>Category</em></h2>
+        <p>Explore our carefully curated menu to find your perfect sip.</p>
+      </div>
+      <div class="category-cards-grid">
+        <!-- Category 1 -->
+        <a href="category.html?type=matcha" class="cat-card-large reveal" data-delay="0">
+          <div class="cat-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1536514072410-5019a3c69182?auto=format&fit=crop&w=800&q=80" alt="Matcha Drinks" class="cat-card-img" />
+          </div>
+          <div class="cat-card-content">
+            <h3>Matcha Drinks</h3>
+            <p>Ceremonial grade matcha blended perfectly for your daily ritual.</p>
+            <span class="cat-cta">Explore →</span>
+          </div>
+        </a>
+        <!-- Category 2 -->
+        <a href="category.html?type=coffee" class="cat-card-large reveal" data-delay="100">
+          <div class="cat-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=800&q=80" alt="Signature Coffee" class="cat-card-img" />
+          </div>
+          <div class="cat-card-content">
+            <h3>Signature Coffee</h3>
+            <p>Premium roasted beans crafted into beautiful, smooth espresso drinks.</p>
+            <span class="cat-cta">Explore →</span>
+          </div>
+        </a>
+        <!-- Category 3 -->
+        <a href="category.html?type=refreshers" class="cat-card-large reveal" data-delay="200">
+          <div class="cat-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=800&q=80" alt="Refreshers & Fruit Drinks" class="cat-card-img" />
+          </div>
+          <div class="cat-card-content">
+            <h3>Refreshers & Fruit Drinks</h3>
+            <p>Vibrant, sparkling, and fruity sips to brighten your afternoon.</p>
+            <span class="cat-cta">Explore →</span>
+          </div>
+        </a>
+      </div>
+      <div class="center-btn reveal">
+        <a href="menu.html" class="btn-outline">View Full Menu →</a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual reveal">
+         
+    
+          
+        <div class="about-text reveal">
+          <div class="about-eyebrow">
+            <div class="about-eyebrow-line"></div>
+            <span class="section-label">✦ Our Story</span>
+          </div>
+          <h2>Born from a <em>love of sipping slowly</em></h2>
+          <div class="about-divider"></div>
+          <p class="about-p">Kynd was created for people who believe that a great drink isn't just about taste — it's about feeling something. We blended the ritual of Japanese tea culture with the warmth of a cozy gathering space.</p>
+          <p class="about-p">Every recipe is crafted to nourish you — not just your tastebuds, but your mood. We use ceremonial-grade matcha, ethically sourced ingredients, and a whole lot of heart.</p>
+          <div class="about-values">
+            <div class="value-item">
+              <span class="value-icon">🌿</span>
+              <div>
+                <strong>Mindful Sourcing</strong>
+                <p>Ethically grown, responsibly sourced</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <span class="value-icon">💞</span>
+              <div>
+                <strong>Made with Care</strong>
+                <p>Every drink crafted by hand</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <span class="value-icon">🌸</span>
+              <div>
+                <strong>Soft & Inclusive</strong>
+                <p>A space for everyone to feel at home</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="section bg-soft">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">✦ @kyndcafe</span>
+        <h2>Follow our <em>aesthetic</em></h2>
+        <p>Tag us in your kynd moments. We love seeing you enjoy the vibe.</p>
+      </div>
+      <div class="gallery-carousel-wrap">
+        <div class="gallery-track-outer">
+          <div class="gallery-track" id="galleryTrack">
+            <div class="gallery-slide">
+              <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80" alt="Cafe Interior" class="gal-img" draggable="false"/>
+            </div>
+            <div class="gallery-slide">
+              <img src="https://images.unsplash.com/photo-1515823662972-da6a2e4d3002?auto=format&fit=crop&w=600&q=80" alt="Matcha Drink" class="gal-img" draggable="false"/>
+            </div>
+            <div class="gallery-slide">
+              <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=600&q=80" alt="Coffee Aesthetic" class="gal-img" draggable="false"/>
+            </div>
+            <div class="gallery-slide">
+              <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?auto=format&fit=crop&w=600&q=80" alt="Lifestyle" class="gal-img" draggable="false"/>
+            </div>
+            <div class="gallery-slide">
+              <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=600&q=80" alt="Dessert" class="gal-img" draggable="false"/>
+            </div>
+            <div class="gallery-slide">
+              <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=600&q=80" alt="Cozy Cafe" class="gal-img" draggable="false"/>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-controls">
+          <button class="gallery-arrow" id="galPrev" aria-label="Previous">&#8592;</button>
+          <div class="gallery-dots" id="galDots"></div>
+          <button class="gallery-arrow" id="galNext" aria-label="Next">&#8594;</button>
+        </div>
+      </div>
+      <div class="center-btn reveal">
+        <a href="https://instagram.com" target="_blank" class="btn-outline">Follow Us on Instagram →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Hours Section -->
+  <section id="location" class="section">
+    <div class="container">
+      <div class="location-grid">
+        <div class="location-text reveal">
+          <span class="section-label">✦ Find Us</span>
+          <h2>Your quiet <em>escape</em></h2>
+          <p>Tucked away in Maadi, our space is designed for slow mornings and peaceful afternoons.</p>
+          
+          <div class="location-details">
+            <div class="loc-item">
+              <div class="loc-icon-wrap">📍</div>
+              <div>
+                <strong>Address</strong>
+                <p>Maadi<br/>Masr</p>
+              </div>
+            </div>
+            <div class="loc-item">
+              <div class="loc-icon-wrap">🕒</div>
+              <div>
+                <strong>Opening Hours</strong>
+                <p>Mon – Fri: 8:00 AM – 9:00 PM<br/>Sat – Sun: 9:00 AM – 10:00 PM</p>
+              </div>
+            </div>
+            <div class="loc-item">
+              <div class="loc-icon-wrap">📞</div>
+              <div>
+                <strong>Contact</strong>
+                <p>0123456789<br/>hello@kyndcafe.com</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn-map">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            Open in Google Maps
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">Kynd</div>
+          <p>A place to slow down, sip something beautiful, and be a little kynder to yourself.</p>
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.77a4.85 4.85 0 01-1.01-.08z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Pinterest">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.08 3.16 9.44 7.64 11.21-.1-.95-.2-2.41.04-3.44.22-.93 1.46-6.19 1.46-6.19s-.37-.75-.37-1.86c0-1.75 1.01-3.05 2.27-3.05 1.07 0 1.59.8 1.59 1.76 0 1.08-.69 2.69-1.04 4.18-.3 1.25.62 2.26 1.85 2.26 2.22 0 3.72-2.86 3.72-6.25 0-2.57-1.74-4.37-4.23-4.37-2.88 0-4.57 2.16-4.57 4.4 0 .87.33 1.8.75 2.31.08.1.09.19.07.29-.08.31-.25.99-.28 1.12-.04.18-.14.22-.31.13-1.17-.55-1.9-2.26-1.9-3.64 0-2.96 2.15-5.68 6.2-5.68 3.25 0 5.78 2.32 5.78 5.41 0 3.23-2.03 5.82-4.85 5.82-.95 0-1.84-.49-2.14-1.07l-.58 2.18c-.21.81-.78 1.82-1.16 2.44.87.27 1.8.41 2.75.41 6.63 0 12-5.37 12-12S18.63 0 12 0z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Menu</h4>
+          <ul>
+            <li><a href="menu.html">Full Menu</a></li>
+            <li><a href="category.html?type=matcha">Matcha</a></li>
+            <li><a href="category.html?type=coffee">Coffee</a></li>
+            <li><a href="category.html?type=refreshers">Refreshers</a></li>
+            <li><a href="category.html?type=desserts">Desserts</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Info</h4>
+          <ul>
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Kynd Café. All rights reserved. Designed and Coded by Mazen Mahmoud Mousa</p>
+      
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
