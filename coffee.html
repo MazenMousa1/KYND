@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>KYND Coffee Menu</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#e8d1d4;
+    min-height:100vh;
+    color:#43522f;
+    overflow-x:hidden;
+}
+
+.matcha-page{
+    width:100%;
+    min-height:100vh;
+    padding:90px 7%;
+    position:relative;
+}
+
+.top-back{
+    position:absolute;
+    top:30px;
+    left:7%;
+    text-decoration:none;
+    color:#43522f;
+    border:1.5px solid #43522f;
+    padding:10px 22px;
+    border-radius:999px;
+    font-size:14px;
+    font-weight:500;
+    transition:.3s ease;
+    backdrop-filter:blur(10px);
+}
+
+.top-back:hover{
+    background:#43522f;
+    color:#fff;
+}
+
+.menu-container{
+    width:100%;
+    max-width:900px;
+    margin:auto;
+}
+
+.menu-title{
+    font-size:72px;
+    font-weight:700;
+    letter-spacing:2px;
+    margin-bottom:55px;
+    color:#43522f;
+}
+
+.menu-list{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+.menu-item{
+    width:100%;
+}
+
+.item-top{
+    display:flex;
+    align-items:flex-end;
+    gap:15px;
+}
+
+.item-name{
+    font-size:28px;
+    font-weight:700;
+    white-space:nowrap;
+    color:#43522f;
+}
+
+.line{
+    flex:1;
+    border-bottom:2px dotted rgba(67,82,47,.5);
+    transform:translateY(-8px);
+}
+
+.price{
+    font-size:22px;
+    font-weight:600;
+    color:#43522f;
+}
+
+.desc{
+    margin-top:6px;
+    font-size:17px;
+    color:#4d4d4d;
+    font-weight:400;
+}
+
+.special{
+    color:#dd7b90;
+    text-shadow:
+        -1px -1px 0 #ffffff20,
+        1px -1px 0 #e0e0e0,
+        -1px 1px 0 #43522f20,
+        1px 1px 0 #43522f20;
+}
+
+@media(max-width:768px){
+
+    .matcha-page{
+        padding:110px 22px 70px;
+    }
+
+    .top-back{
+        left:22px;
+        top:25px;
+    }
+
+    .menu-title{
+        font-size:48px;
+        margin-bottom:40px;
+    }
+
+    .item-name{
+        font-size:20px;
+    }
+
+    .price{
+        font-size:17px;
+    }
+
+    .desc{
+        font-size:14px;
+        line-height:1.6;
+    }
+
+    .line{
+        transform:translateY(-5px);
+    }
+
+    .menu-list{
+        gap:24px;
+    }
+}
+
+@media(max-width:480px){
+
+    .menu-title{
+        font-size:42px;
+    }
+
+    .item-name{
+        font-size:17px;
+    }
+
+    .price{
+        font-size:15px;
+    }
+
+    .desc{
+        font-size:13px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="matcha-page">
+
+    <a href="menu.html" class="top-back">
+        ← Back
+    </a>
+
+    <div class="menu-container">
+
+        <h1 class="menu-title">COFFEE</h1>
+
+        <div class="menu-list">
+
+            <div class="menu-item">
+                <div class="item-top">
+                    <h2 class="item-name">ESPRESSO</h2>
+                    <div class="line"></div>
+                    <span class="price">90.00</span>
+                </div>
+                <p class="desc">A single shot of rich, concentrated coffee.</p>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-top">
+                    <h2 class="item-name">AMERICANO</h2>
+                    <div class="line"></div>
+                    <span class="price">100.00</span>
+                </div>
+                <p class="desc">Espresso shots diluted with water.</p>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-top">
+                    <h2 class="item-name">CORTADO</h2>
+                    <div class="line"></div>
+                    <span class="price">95.00</span>
+                </div>
+                <p class="desc">Equal parts espresso and steamed milk.</p>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-top">
+                    <h2 class="item-name">CAPPUCCINO</h2>
+                    <div class="line"></div>
+                    <span class="price">120.00</span>
+                </div>
+                <p class="desc">Espresso, steamed milk, and thick foam.</p>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-top">
+                    <h2 class="item-name">FLAT WHITE</h2>
+                    <div class="line"></div>
+                    <span class="price">110.00</span>
+                </div>
+                <p class="desc">Espresso and steamed milk with a smooth, velvety texture.</p>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-top">
+                    <h2 class="item-name">MACCHIATO</h2>
+                    <div class="line"></div>
+                    <span class="price">90.00</span>
+                </div>
+                <p class="desc">Espresso topped with a small amount of milk foam.</p>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-top">
+                    <h2 class="item-name">LATTE</h2>
+                    <div class="line"></div>
+                    <span class="price">120.00</span>
+                </div>
+                <p class="desc">Equal parts of espresso, steamed milk, and foam.</p>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-top">
+                    <h2 class="item-name special">THE KYNDEST LATTE</h2>
+                    <div class="line"></div>
+                    <span class="price">155.00</span>
+                </div>
+                <p class="desc">Espresso, cold milk, and sugar-free vanilla syrup.</p>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-top">
+                    <h2 class="item-name">SPANISH LATTE</h2>
+                    <div class="line"></div>
+                    <span class="price">150.00</span>
+                </div>
+                <p class="desc">Espresso, cold milk, and sweet condensed milk over ice.</p>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-top">
+                    <h2 class="item-name">PISTACHIO LATTE</h2>
+                    <div class="line"></div>
+                    <span class="price">170.00</span>
+                </div>
+                <p class="desc">Espresso, cold milk, and creamy pistachio flavor over ice.</p>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-top">
+                    <h2 class="item-name special">KYND HAZELNUT LATTE</h2>
+                    <div class="line"></div>
+                    <span class="price">170.00</span>
+                </div>
+                <p class="desc">Espresso, cold milk, hazelnut syrup, and lotus biscoff sauce.</p>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-top">
+                    <h2 class="item-name">SALTED CARAMEL LATTE</h2>
+                    <div class="line"></div>
+                    <span class="price">150.00</span>
+                </div>
+                <p class="desc">Espresso, steamed milk, and rich salted caramel flavor.</p>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-top">
+                    <h2 class="item-name">WHITE MOCHA LATTE</h2>
+                    <div class="line"></div>
+                    <span class="price">155.00</span>
+                </div>
+                <p class="desc">Espresso, steamed milk, and sweet white chocolate.</p>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-top">
+                    <h2 class="item-name">CINNAMON LATTE</h2>
+                    <div class="line"></div>
+                    <span class="price">150.00</span>
+                </div>
+                <p class="desc">Espresso, cold milk, and a touch of cinnamon flavor.</p>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-top">
+                    <h2 class="item-name">BUTTER SCOTCH ICE LATTE</h2>
+                    <div class="line"></div>
+                    <span class="price">150.00</span>
+                </div>
+                <p class="desc">Espresso, steamed milk, and Butter scotch syrup.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>KYND Matcha Menu</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#e8d1d4;
+    min-height:100vh;
+    color:#43522f;
+    overflow-x:hidden;
+}
+
+.matcha-page{
+    width:100%;
+    min-height:100vh;
+    padding:90px 7%;
+    position:relative;
+}
+
+.top-back{
+    position:absolute;
+    top:30px;
+    left:7%;
+    text-decoration:none;
+    color:#43522f;
+    border:1.5px solid #43522f;
+    padding:10px 22px;
+    border-radius:999px;
+    font-size:14px;
+    font-weight:500;
+    transition:.3s ease;
+    backdrop-filter:blur(10px);
+}
+
+.top-back:hover{
+    background:#43522f;
+    color:#fff;
+}
+
+.menu-container{
+    width:100%;
+    max-width:900px;
+    margin:auto;
+}
+
+.menu-title{
+    font-size:72px;
+    font-weight:700;
+    letter-spacing:2px;
+    margin-bottom:55px;
+    color:#43522f;
+}
+
+.menu-list{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+.menu-item{
+    width:100%;
+}
+
+.item-top{
+    display:flex;
+    align-items:flex-end;
+    gap:15px;
+}
+
+.item-name{
+    font-size:28px;
+    font-weight:700;
+    white-space:nowrap;
+    color:#43522f;
+}
+
+.line{
+    flex:1;
+    border-bottom:2px dotted rgba(67,82,47,.5);
+    transform:translateY(-8px);
+}
+
+.price{
+    font-size:22px;
+    font-weight:600;
+    color:#43522f;
+}
+
+.desc{
+    margin-top:6px;
+    font-size:17px;
+    color:#4d4d4d;
+    font-weight:400;
+}
+
+.special{
+    color:#dd7b90;
+    text-shadow:
+        -1px -1px 0 #ffffff20,
+        1px -1px 0 #e0e0e0,
+        -1px 1px 0 #43522f20,
+        1px 1px 0 #43522f20;
+}
+
+.bg-shape{
+    position:absolute;
+    opacity:.08;
+    pointer-events:none;
+}
+
+.shape1{
+    top:120px;
+    right:-30px;
+    width:180px;
+}
+
+.shape2{
+    bottom:50px;
+    left:-40px;
+    width:150px;
+}
+
+@media(max-width:768px){
+
+    .matcha-page{
+        padding:110px 22px 70px;
+    }
+
+    .top-back{
+        left:22px;
+        top:25px;
+    }
+
+    .menu-title{
+        font-size:48px;
+        margin-bottom:40px;
+    }
+
+    .item-name{
+        font-size:20px;
+    }
+
+    .price{
+        font-size:17px;
+    }
+
+    .desc{
+        font-size:14px;
+        line-height:1.6;
+    }
+
+    .line{
+        transform:translateY(-5px);
+    }
+
+    .menu-list{
+        gap:24px;
+    }
+}
+
+@media(max-width:480px){
+
+    .menu-title{
+        font-size:42px;
+    }
+
+    .item-name{
+        font-size:17px;
+    }
+
+    .price{
+        font-size:15px;
+    }
+
+    .desc{
+        font-size:13px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="matcha-page">
+
+    <a href="menu.html" class="top-back">
+        ← Back
+    </a>
+
+
+    <div class="menu-container">
+
+        <h1 class="menu-title">MATCHA</h1>
+
+        <div class="menu-list">
+
+            <div class="menu-item">
+                <div class="item-top">
+                    <h2 class="item-name">MATCHA LATTE</h2>
+                    <div class="line"></div>
+                    <span class="price">160.00</span>
+                </div>
+                <p class="desc">Matcha with milk for a stronger, richer flavor.</p>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-top">
+                    <h2 class="item-name">PISTACHIO MATCHA</h2>
+                    <div class="line"></div>
+                    <span class="price">180.00</span>
+                </div>
+                <p class="desc">Matcha, milk, and creamy pistachio flavor.</p>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-top">
+                    <h2 class="item-name">SALTED CARAMEL MATCHA</h2>
+                    <div class="line"></div>
+                    <span class="price">185.00</span>
+                </div>
+                <p class="desc">Matcha, milk, and smooth caramel flavor with a hint of salt.</p>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-top">
+                    <h2 class="item-name">SPANISH MATCHA LATTE</h2>
+                    <div class="line"></div>
+                    <span class="price">180.00</span>
+                </div>
+                <p class="desc">Matcha, milk, and sweet condensed milk.</p>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-top">
+                    <h2 class="item-name">CINNAMON MATCHA</h2>
+                    <div class="line"></div>
+                    <span class="price">180.00</span>
+                </div>
+                <p class="desc">Matcha, milk, and a touch of cinnamon.</p>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-top">
+                    <h2 class="item-name">WHITE MATCHA</h2>
+                    <div class="line"></div>
+                    <span class="price">180.00</span>
+                </div>
+                <p class="desc">Matcha, milk and sweet white chocolate.</p>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-top">
+                    <h2 class="item-name special">KYND CREAM MATCHA</h2>
+                    <div class="line"></div>
+                    <span class="price">190.00</span>
+                </div>
+                <p class="desc">Matcha, coconut water, and a touch of rich cream.</p>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-top">
+                    <h2 class="item-name">STRAWBERRY MATCHA</h2>
+                    <div class="line"></div>
+                    <span class="price">190.00</span>
+                </div>
+                <p class="desc">Matcha, milk, and rich strawberry flavor.</p>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-top">
+                    <h2 class="item-name special">THE KYNDEST PINK MATCHA</h2>
+                    <div class="line"></div>
+                    <span class="price">190.00</span>
+                </div>
+                <p class="desc">Matcha, coconut water, and a touch of rich cream and strawberry flavor.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
