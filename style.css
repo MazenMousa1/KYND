@@ -1213,3 +1213,11 @@ button,
     padding: 9px 15px;
   }
 }
+
+.home-page {
+  overflow-x: hidden;
+}
+
+.home-page * {
+  max-width: 100%;
+}
