@@ -338,3 +338,28 @@ setupCartButtons();
     });
   }
 })();
+
+
+
+// ===== RESPONSIVE GALLERY FIX =====
+
+window.addEventListener('resize', () => {
+  const galleryTrack = document.querySelector('.gallery-track');
+
+  if (!galleryTrack) return;
+
+  galleryTrack.style.transition = 'transform 0.4s ease';
+
+  requestAnimationFrame(() => {
+    galleryTrack.style.willChange = 'transform';
+  });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const images = document.querySelectorAll('.gal-img');
+
+  images.forEach((img) => {
+    img.setAttribute('draggable', 'false');
+  });
+});
+
